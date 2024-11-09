@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+project(school)
+add_subdirectory(fmt)
+add_executable(school main.cpp student.cpp time.cpp)
+target_link_libraries(school PRIVATE fmt)
